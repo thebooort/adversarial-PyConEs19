@@ -1,0 +1,93 @@
+% last updated in April 2002 by Antje Endemann
+% Based on CVPR 07 and LNCS, with modifications by DAF, AZ and elle, 2008 and AA, 2010, and CC, 2011; TT, 2014; AAS, 2016
+
+\documentclass[runningheads]{llncs}
+\usepackage[english,spanish.notilde.lcroman,shorthands=off]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb} % define this before the line numbering.
+\usepackage{ruler}
+\usepackage{color}
+\usepackage{enumitem,amssymb}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\hspace{-2.5pt}}
+\usepackage[width=122mm,left=12mm,paperwidth=146mm,height=193mm,top=12mm,paperheight=217mm]{geometry}
+
+\usepackage{fancyhdr}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength\headheight{80.0pt}
+\addtolength{\textheight}{-80.0pt}
+%\chead{\includegraphics[width=0.15\textwidth]{Largo.PNG}}
+
+\begin{document}
+
+\pagestyle{headings}
+\mainmatter
+
+
+\title{Plantilla de \LaTeX para CFP} % Replace with your title
+
+
+\author{Propuesta an\'onima para PyConES 2019}
+
+\maketitle
+
+\section{Tipo de Contribuci\'on}
+
+\begin{todolist}
+  \item Charla corta
+  \item [\done]Charla extendida
+  \item P\'oster
+  \item Taller
+  \end{todolist}
+
+
+\section{Idioma}
+\begin{todolist}
+  \item [\done]Espa\~nol
+  \item Ingl\'es
+\end{todolist}
+\section{Nivel}
+
+\begin{todolist}
+  \item Avanzado
+  \item [\done] Medio
+  \item Iniciaci\'on
+  \end{todolist}
+
+\keywords{Python, Image Processing, Machine learning, Neural Networks, Adversarial Attacks}
+
+\newpage
+
+\section{Resumen}
+\textit{Cada d\'ia m\'as y m\'as dispositivos hacen uso de sistemas de inteligencia artificial para intentar mejorar nuestra vida. Casos como los coches autonomos o los sistemas de reconocimiento facial son cada día más comunes. Sin embargo, este auge ha llevado a cient\'ificos de todo el mundo a preguntarse si estos sistemas son realmente seguros y podemos descansar en ellos tareas que podrían ser cruciales. Para contestar a esta pregunta, en esta charla se presentaran los principales trabajos relacionados con las redes neuronales antag\'onicas, es decir, ataques que buscan confundir sistemas de inteligencia artifical. A trav\'es de ejemplos fundamentados en el reconocimiento de imagen, explicaremos en qu\'e consisten este tipo de vulnerabilidades, las herramientas necesarias en python para realizar nuestros propios testeos y mostraremos demos en directo sobre los ejemplos tratados.}
+
+\section{Presentaci\'on}
+
+\textit{Aunque no existe un l\'imite estricto de palabras, una extensi\'on normal no suele ser superior a una p\'agina. Esta presentaci\'on puede contener fotograf\'ias, gr\'aficos, y enlaces a demos y/o c\'odigo (el cual no se incluir\'a en la propuesta). En la propuesta debe distinguirse de manera clara los aspectos m\'as relevantes para que la propuesta sea inteligible (ejemplo: Introducci\'on, metodolog\'ia empleada, resultados que se han obtenido, demos y/o fragmentos de c\'odigo imprescindibles \dots). Adem\'as, se deber\'an aportar las conclusiones m\'as destacadas de la propuesta y las referencias consultadas.}
+\cite{Alpher02},
+\cite{Alpher03}, \cite{Alpher04} \dots
+
+
+\section{Pre-requisitos para atender a la presentación}
+\begin{itemize}
+\item  Los asistentes deber\'an tener conocimientos previos de conceptos básicos de aprendizaje autom\'atico y apredizaje profundo. 
+\end{itemize}
+
+\section{Otros requerimientos t\'ecnicos}
+\begin{itemize}
+ \item Durante la presentación haremos algunas demos sobre sistemas de inteligencia artificial hackeados, como vamos a llevar nuestro ordenador, nos gustaría tener un par de minutos previos a la charla para acoplar nuestro portatil.
+
+ \item Utilizaremos nuestro ordenador  para la propuesta con lo que nos gustaría estar seguros de que habrá puerto HDMI o VGA disponible. 
+\end{itemize}
+
+\clearpage
+
+\bibliographystyle{splncs}
+\bibliography{egbib}
+\end{document}
