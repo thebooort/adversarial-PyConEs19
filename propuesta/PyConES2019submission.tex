@@ -65,17 +65,20 @@
 \newpage
 
 \section{Resumen}
-\textit{Asumámoslo, todos somos bastante holgazanes. Optimizar está en nuestra naturaleza, no sólo en la humana sino en la del mundo que nos rodea. Y por consecuencia, también en nuestra tecnología. Distintos procesos son el producto de una optimización como la forma de las pompas de jabón, la ruta que ha de seguir un repartidor o la inversión que se ha de realizar en bolsa. }
+
 	
-	\textit{Pero conforme nuestro mundo y nuestras vidas evolucionan también lo hacen los problemas a los que nos enfrentamos y los recursos necesarios para sobrepasarlos con éxito. La eficiencia es la clave para la mayoría de las aplicaciones presentes y futuras, pero llegar a conseguirla no será fácil. La optimización proporciona una combinación elegante entre la teoría matemática más pura y su aplicación en el mundo que nos rodea.}
-	
-	\textit{En esta charla queremos motivar y explicar en que consisten estos problemas de optimización, que dificultades podemos encontrar y como podremos resolverlas usando Python. Para ello usaremos distintos enfoques desde el más simple que consiste en derivar una función, métodos numéricos como gradiente descendiente, algoritmos bioinspirados como los evolutivos y por último optimización bayesiana que tiene en cuenta la incertidumbre y en pocas iteraciones puede encontrar el óptimo.}
-	
-	\textit{Finalmente, pondremos el famoso ejemplo de optimización conocido como el problema del viajante para resolverlo entre todos con los métodos expuestos.}
+	\textit{ Asúmamoslo, somos bastante holgazanes, y siempre tendemos a la ley del mínimo esfuerzo o a la eficiencia. La optimización matemática se puede definir como encontrar el valor que maximiza o minimiza una determinada función y por tanto responde a una definición de eficiencia. Muchos problemas que surgen de la física, ingeniería, economía o biología, se pueden reformular como la búsqueda de un punto óptimo de una función: encontrar el punto que minimiza la energía, que minimiza costes, que minimiza recursos, etcétera. La optimización proporciona una combinación elegante entre la teoría matemática más pura y su aplicación en el mundo que nos rodea. En esta charla queremos motivar y explicar en que consisten estos problemas de optimización, qué dificultades podemos encontrar y cómo podremos resolverlas usando Python. Para ello usaremos distintos enfoques desde el más simple que consiste en derivar una función, métodos numéricos como gradiente descendiente, algoritmos bioinspirados como los evolutivos y por último optimización bayesiana que tiene en cuenta la incertidumbre y en pocas iteraciones puede encontrar el óptimo.}	\textit{Finalmente, pondremos el famoso ejemplo de optimización conocido como el problema del viajante para resolverlo entre todos con los métodos expuestos.}
 
 \section{Presentaci\'on}
-..
 
+Motivaremos el problema de optimización con distintos ejemplos que se da en el mundo que nos rodea. A través de algún ejemplo sencillo, iremos explicando distintos métodos entiendo la dificultad de este problema. 
+
+Este ejemplo sencillo será una función 1-Dimensional, si esta función es derivable y conocemos su derivada es bien sabido que su óptimo se encontrará en un punto crítico, es decir, un punto en el cual se anule la derivada. Esto no es siempre tan sencillo, ya que muchas veces es difícil encontrar los ceros de la función derivada. Para ello, surgen algoritmos numéricos como el gradiente descendente, el cual de forma iterativa usando información de la derivada convergerá numéricamente al punto óptimo si se cumplen las condiciones adecuadas.
+Muchas veces evaluar esta función objetivo puede ser difícil y complicado, para ello surge la optimización bayesiana (GpyOpt), el cual en pocas iteraciones será capaz de encontrar el punto óptimo. Además, muchas veces las observaciones de esta función objetivo son ruidosas, y querremos modelar la incertidumbre lo cual será viable con este método.
+En otras ocasiones donde no tenemos ni información de la derivada ni nuestra función es continua (ya que puede ser discreta), el caso más famoso sería el problema del viajante debemos recurrir a metaheurísticas. Entre estos algoritmos los más famosos son los bioinspirados los cuales tratan de mimetizar el comportamiento de la naturaleza. Entre estos se encuentran los algoritmos evolutivos.
+Por último, pondremos el problema del viajero y como puede ser resuelto usando algoritmos de tipo evolutivo.
+
+Haremos un repositorio en GitHub abierto para compartirlo con la comunidad y que puedan experimentar con los modelos propuestos.
 
 \section{Pre-requisitos para atender a la presentación}
 \begin{itemize}
